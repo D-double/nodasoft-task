@@ -138,12 +138,13 @@ body {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 199px;
   margin-bottom: 100px;
 }
 
 .cards__item {
   background: #0D89B0;
+  width: 100%;
+  aspect-ratio: 1.2814/1;
 }
 
 .footer {
