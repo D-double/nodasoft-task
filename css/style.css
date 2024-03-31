@@ -47,18 +47,35 @@ body {
   display: grid;
   grid-template-columns: minmax(100px, 390px) minmax(100px, 590px) 1fr;
   grid-auto-rows: 198px;
-  color: #fff;
-  font-size: 53px;
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 .gallery__card {
-  background: #8AD191;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #8AD191;
+  color: #fff;
+  font-size: 53px;
 }
 
 .gallery__card:nth-of-type(5n-1) {
   grid-column: span 2;
+}
+
+.gallery__card:nth-of-type(1)::after {
+  content: '1';
+}
+.gallery__card:nth-of-type(2)::after {
+  content: '2';
+}
+.gallery__card:nth-of-type(3)::after {
+  content: '3';
+}
+.gallery__card:nth-of-type(4)::after {
+  content: '4';
+}
+.gallery__card:nth-of-type(5)::after {
+  content: '5';
 }
